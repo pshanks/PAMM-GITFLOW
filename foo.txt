@@ -1,3 +1,7 @@
 initial test file
 make another adjustment
+<<<<<<< HEAD
 make an adjustment for feature x.y
+=======
+make an adjustment for feature x.x.
+>>>>>>> develop
