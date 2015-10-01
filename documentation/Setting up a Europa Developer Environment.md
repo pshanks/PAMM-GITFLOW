@@ -1,5 +1,7 @@
 # Setting Up a Europa Developer Environment
-To provision a Europa developer environment there are 2 options available:
+Europa is a Virtualised Development Environment (VDE) aimed at speeding up the process of installing the tools and middleware required to develop applications using Java, Scala, Groovy and JavaScript. It provides a ready to use set of development tools and the ability to run middleware such as Web Servers, Databases, etc. on standardised Linux containers as part of the environment via Docker.
+
+To provision a Europa developer environment you can either download a pre-built image hosted by the EPI Environments Support team or build an environment from scripts developed in Ansible. 
 
 ## 1. Import a pre-built image from the Environments Management share
 Currently pre build Europa images are kept in the following location:
@@ -10,27 +12,27 @@ You will need to request access to the share by sending an email to the followin
 
 
 1. Once you have been granted access to the share go to the Europa directory and download the following 12 zip files:
-| File Name  	 | Size on Disk |
-|--------------|--------------|
-|europa.7z.001	|	734,003,200  | 
-|europa.7z.002	|	734,003,200 |
-|europa.7z.003	|	734,003,200 |
-|europa.7z.004	|	734,003,200 |
-|europa.7z.005	|	734,003,200 |
-|europa.7z.006	|	734,003,200 |
-|europa.7z.007	|	734,003,200 |
-|europa.7z.008	|	734,003,200 |
-|europa.7z.009	|	734,003,200 |
-|europa.7z.010	|	734,003,200 |
-|europa.7z.011	|	734,003,200 |
-|europa.7z.012	|	249,943,996 |
+| File Name	 | Size on Disk |
+|:--------|:--------|
+|europa.7z.001	|	734,003,200| 
+|europa.7z.002	|	734,003,200 
+|europa.7z.003	|	734,003,200 
+|europa.7z.004	|	734,003,200 
+|europa.7z.005	|	734,003,200 
+|europa.7z.006	|	734,003,200 
+|europa.7z.007	|	734,003,200 
+|europa.7z.008	|	734,003,200 
+|europa.7z.009	|	734,003,200 
+|europa.7z.010	|	734,003,200 
+|europa.7z.011	|	734,003,200 
+|europa.7z.012	|	249,943,996 
 
 1. Unzip the files to a local directory on your computer using the 7-Zip utility by right clicking the europa.7z.001 file and selecting Extract to “europa\”
 if you do not have a local copy of 7-zip on your desktop, the product can be downloaded from the following location:
 http://www.7-zip.org/download.html
 1. The unzipped Europa image should produce a single file called Europa.ova. Using an MD5 checksum utility ensure both the downloaded zip files and the unzipped  ova file have the following MD5 checksums:
 | Checksum | File Name |
-|--------|--------|
+|:--------|:--------|
 |aafabac3177e809b432774e8c5c65dd6 |	europa.ova |
 |9b3d6658034459a4e041d2a649218f55 |	europa.7z.001|
 |2246I9b20330f603031acb037bd700cdd |europa.7z.002|
@@ -79,30 +81,36 @@ sh build.sh
 
 
 ## 3.  	Installed Software on Europa
-The following applications will be found in the newly built Europa environment
+The following applications will be found in the newly built VDE environment
 
-•	Centos 7.1
-•	Java JDK 1.8
-•	Vagrant
-•	Google Chrome
-•	SBT(Scala Build Tool)
-•	Packer
-•	IntelliJ Ultimate Edition
-•	Eclipse
-•	MySQL Workbench
-•	Git
-•	Groovy
-•	Gradle
-•	Maven
-•	Haroopad
-•	RoboMongo
-•	Docker
-•	NodeJS
+###### 3.1 Integrated Development Environments (IDE)
 
+| Tool | Description |
+|:-----|:------------|
+| ScalaIDE | The primary tool used to develop Scala based applications using Play or Akka.|
+| JBoss Development Studio| JBoss Development Studio (JBDS) is the primary tool to develop aplications using JBoss EAP, JBoss Fuse, JBoss BRMS and JBoss BPMS.|
+| IntelliJ IDEA| Provides a nice set of development productivity tools and can be used to develop Scala, Java, JavaScript and Groovy applications. **NOTE:** IntelliJ starts with a 30-day trial of Ultimate Edition. A valid key must be entered after the trial period to avoid expiration. After launching IntelliJ, activate plugins as required.|
 
-#####3.1 PAMM
+###### 3.2 Build Tools
 
-#####3.1 JAMM
+| Tool | Description |
+|:-----|:------------|
+| Maven | Apache Maven is included as the standard build tool for Java based projects. |
+| Gradle | Gradle is included as an alternative to Maven which leverages the use of Groovy instead of XML for build configuration files. Gradle provides a simpler way to create plugins and extensions when standard components are not good enough.|
+|SBT|The Simple Build Tool (SBT) is provided primarily to build Scala projects. It uses Scala to define build tasks. It also allows to run the tasks in parallel from the shell.|
+
+###### 3.3 Languages
+| Language | Description |
+|:---------|:------------|
+| Java | supported via JDK 1.8 and provided via JDBS and IntelliJ. |
+| Scala| supported via JDK 1.8 and provided via TypeSafe Activator, ScalaIDE and IntelliJ. |
+| Groovy | suported via Command Line and IDEs.|
+| JavaScript| best support via IntelliJ.|
+|Other| supported via IDEs plugins.|
+
+###### 3.4 PAMM
+
+######3.1 JAMM
 
 
 
