@@ -10,20 +10,20 @@ You will need to request access to the share by sending an email to the followin
 
 
 1. Once you have been granted access to the share go to the Europa directory and download the following 12 zip files:
-| File Name	 | Size on Disk |
-|--------|--------|
-|europa.7z.001	|	734,003,200| 
-|europa.7z.002	|	734,003,200 
-|europa.7z.003	|	734,003,200 
-|europa.7z.004	|	734,003,200 
-|europa.7z.005	|	734,003,200 
-|europa.7z.006	|	734,003,200 
-|europa.7z.007	|	734,003,200 
-|europa.7z.008	|	734,003,200 
-|europa.7z.009	|	734,003,200 
-|europa.7z.010	|	734,003,200 
-|europa.7z.011	|	734,003,200 
-|europa.7z.012	|	249,943,996 
+| File Name  	 | Size on Disk |
+|--------------|--------------|
+|europa.7z.001	|	734,003,200  | 
+|europa.7z.002	|	734,003,200 |
+|europa.7z.003	|	734,003,200 |
+|europa.7z.004	|	734,003,200 |
+|europa.7z.005	|	734,003,200 |
+|europa.7z.006	|	734,003,200 |
+|europa.7z.007	|	734,003,200 |
+|europa.7z.008	|	734,003,200 |
+|europa.7z.009	|	734,003,200 |
+|europa.7z.010	|	734,003,200 |
+|europa.7z.011	|	734,003,200 |
+|europa.7z.012	|	249,943,996 |
 
 1. Unzip the files to a local directory on your computer using the 7-Zip utility by right clicking the europa.7z.001 file and selecting Extract to “europa\”
 if you do not have a local copy of 7-zip on your desktop, the product can be downloaded from the following location:
